@@ -4,7 +4,7 @@ A simple Python-based automation tool to adjust timing and telemetry settings fo
 
 ## 🛠 Features
 - **Automatic Backup**: Creates a `.bak` copy of your `rpt.conf` before making any changes.
-- **Automated Insertion**: Finds the `startup_macro` and inserts `wait_time` and `hangtime` settings.
+- **Automated Insertion**: Finds the `startup_macro` and inserts `wait_times` and `hangtime` settings.
 - **Telemetry Update**: Specifically targets the `[wait-times_hd]` stanza to update `telemwait`, `idwait`, and `unkeywait` from 100ms to 500ms.
 - **Safety First**: Includes root privilege checks and regex-based matching to handle comments and whitespace.
 
@@ -33,8 +33,7 @@ The script automates the following manual steps in `/etc/asterisk/rpt.conf`:
 
 - **Inserts under `;startup_macro = *8132000`:**
   ```ini
-  wait_time = wait-times_hd
-  hangtime = 100
+    hangtime = 100
   ```
 
 - **Updates in `[wait-times_hd]`:**
