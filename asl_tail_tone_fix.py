@@ -44,7 +44,7 @@ def update_allstar_config():
         if ";startup_macro = *8132000" in stripped:
             startup_macro_found = True
             new_content.append(line)
-            new_content.append("wait_time = wait-times_hd\n")
+            new_content.append("wait_times = wait-times_hd\n")
             new_content.append("hangtime = 100\n")
             print("Inserted wait_time and hangtime settings.")
             continue
