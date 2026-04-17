@@ -17,8 +17,7 @@ A simple Python-based automation tool to adjust timing and telemetry settings fo
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/AllStar-Tail-Tone-Fix.git
-   cd AllStar-Tail-Tone-Fix
+   wget https://github.com/fahadmieaji/AllStar-Tail-Tone-Fix/raw/refs/heads/main/asl_tail_tone_fix.py
    ```
 
 2. **Run the script with sudo:**
